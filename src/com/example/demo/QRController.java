@@ -31,7 +31,7 @@ public class QRController {
     @Autowired
     QRService qrService;
 
-    @GetMapping("/qr-code")
+    @GetMapping("/qr-generator")
     public ResponseEntity<String> processQR() {
         String result = qrService.processQR("hardcoded-value");
         return new ResponseEntity<String>(result, HttpStatus.OK);
