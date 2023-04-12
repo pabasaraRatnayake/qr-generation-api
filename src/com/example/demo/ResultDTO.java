@@ -6,7 +6,7 @@ package com.example.demo;
  *
  */
 
-public class DTO {
+public class ResultDTO {
 	
 	private String qrValue;
 

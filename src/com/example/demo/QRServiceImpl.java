@@ -6,8 +6,10 @@ import org.springframework.stereotype.Service;
 public class QRServiceImpl implements QRService {
 
 	@Override
-	public String processQR(String qrValue) {
-		return "{\"result\": \"123456789|WPSLite|H34\"}";
+	public ResultDTO processQR() {
+		ResultDTO resultDTO = new ResultDTO();
+		resultDTO.setQrValue("123456789|WPSLite|H34");
+		return resultDTO;
 	}
 
 }
